@@ -6,22 +6,22 @@ var winY = window.innerHeight;
 
 var count = 0;
 
-setTimeout(() => {
-  const headerContent = document.getElementsByClassName("header-content")[0];
+// setTimeout(() => {
+//   const headerContent = document.getElementsByClassName("header-content")[0];
 
-  let div = document.createElement('div');
-  div.setAttribute('class', "header-content-sub");
+//   let div = document.createElement('div');
+//   div.setAttribute('class', "header-content-sub");
 
-  let h3 = document.createElement('h3');
-  h3.innerHTML = "Coming soon...";
+//   let h3 = document.createElement('h3');
+//   h3.innerHTML = "Coming soon...";
 
-  let p = document.createElement('p');
-  p.innerHTML = "Coders Lodge is a Community of Coders";
+//   let p = document.createElement('p');
+//   p.innerHTML = "Coders Lodge is a Community of Coders";
 
-  div.appendChild(h3);
-  div.appendChild(p);
-  headerContent.appendChild(div);
-}, 4000)
+//   div.appendChild(h3);
+//   div.appendChild(p);
+//   headerContent.appendChild(div);
+// }, 4000)
 
 
 
@@ -273,85 +273,139 @@ window.addEventListener("load", () => {
     })
   }, 4000);
 
-  setTimeout(()=> {
-    let audio1 = new Audio("audio/dl/1.mp3");
-    let audio11 = new Audio("audio/dl/11.mp3");
-    audio1.play();
-    audio11.play();
-  } , 0);
+  // setTimeout(()=> {
+  //   let audio1 = new Audio("audio/dl/1.mp3");
+  //   let audio11 = new Audio("audio/dl/11.mp3");
+  //   audio1.play();
+  //   audio11.play();
+  // } , 0);
 
-  setTimeout(()=> {
-    let audio2 = new Audio("audio/dl/5.mp3");
-    //let audio3 = new Audio("audio/dl/3.mp3");
-    let audio11 = new Audio("audio/dl/11.mp3");
-    let audio7 = new Audio("audio/dl/7.mp3");
-    audio2.play();
-    //audio3.play();
-    audio11.play();
-    audio7.play();
-  } , 1700);
+  // setTimeout(()=> {
+  //   let audio2 = new Audio("audio/dl/5.mp3");
+  //   //let audio3 = new Audio("audio/dl/3.mp3");
+  //   let audio11 = new Audio("audio/dl/11.mp3");
+  //   let audio7 = new Audio("audio/dl/7.mp3");
+  //   audio2.play();
+  //   //audio3.play();
+  //   audio11.play();
+  //   audio7.play();
+  // } , 1700);
 
+  // setInterval(()=> {
+  //   let elemLogoPath = document.querySelectorAll(".logo-path-copy");
+  //   setTimeout(()=> {
+  //     elemLogoPath.forEach(
+  //       function(x) {
+  //         if(x.style.animation == "none") {
+  //           x.style.animationName = "xyz0";
+            
+  //         }
+  //         else {
+  //           x.style.animation = "none";
+  //         }
+  //     });
+  //   })
+  // },1200);
   
+  // setInterval(()=> {
+  //   let elemTopPath = document.querySelectorAll(".makePathTopCopy");
+  //   setTimeout(()=> {
+  //     elemTopPath.forEach(
+  //       function(x) {
+  //         if(x.style.animation == "none") {
+  //           x.style.animationName = "xyz0";
+  //         }
+  //         else {
+  //           x.style.animation = "none";
+  //         }
+  //     });
+  //   })
+  // },1300);
+  
+  // setInterval(()=> {
+  //   let elemTopBootm = document.querySelectorAll(".makePathBootmCopy");
+  //   setTimeout(()=> {
+  //     elemTopBootm.forEach(
+  //       function(x) {
+  //         if(x.style.animation == "none") {
+  //           x.style.animationName = "xyz0";
 
-  let countPath = 0;
+  //         }
+  //         else {
+  //           x.style.animation = "none";
+  //         }
+  //     });
+  //   })
+  // },1400);
 
-  setTimeout(()=> {
-    let elemLogoPath = document.querySelectorAll(".logo-path-copy");
-    let elemPath = document.querySelectorAll(".makePathCopy");
-    let elemTopPath = document.querySelectorAll(".makePathTopCopy");
-    let elemTopBootm = document.querySelectorAll(".makePathBootmCopy");
-    let elemTopLeft = document.querySelectorAll(".makePathLeftCopy");
-    let elemTopRight = document.querySelectorAll(".makePathRightCopy");
-    let audio14 = new Audio("audio/dl/14.mp3");
-    let audio8 = new Audio("audio/dl/8.mp3");
-    let audio = new Audio("audio/1.mp3");
+  // setInterval(()=> {
+  //   let elemTopLeft = document.querySelectorAll(".makePathLeftCopy");
+  //   setTimeout(()=> {
+  //     elemTopLeft.forEach(
+  //       function(x) {
+  //         if(x.style.animation == "none") {
+  //           x.style.animationName = "xyz0";
+            
+  //         }
+  //         else {
+  //           x.style.animation = "none";
+            
+  //         }
+  //     });
+  //   })
+  // },1500);
+  
+  // setInterval(()=> {
+  //   let elemTopRight = document.querySelectorAll(".makePathRightCopy");
+  //   setTimeout(()=> {
+  //     elemTopRight.forEach(
+  //       function(x) {
+  //         if(x.style.animation == "none") {
+  //           x.style.animationName = "xyz0";
+  //         }
+  //         else {
+  //           x.style.animation = "none";
+  //         }
+  //     });
+  //   })
+  // },1600);
 
-    var x = setInterval(() => {
-      audio.play();
-    },800);
+  // setTimeout(()=> {
+    
+  //   let elemPath = document.querySelectorAll(".makePathCopy");
+  //   let elemTopPath = document.querySelectorAll(".makePathTopCopy");
+  //   let elemTopBootm = document.querySelectorAll(".makePathBootmCopy");
+  //   let elemTopLeft = document.querySelectorAll(".makePathLeftCopy");
+  //   let elemTopRight = document.querySelectorAll(".makePathRightCopy");
 
-    setTimeout(() => {
-      audio8.play()
-    }, 7000)
-    // countPath++;
-    audio14.playbackRate = 0.6;
-    audio14.play();
-    setTimeout(()=> {
-      // elemPath.style.animationName = "xyz" + countPath;
-      audio14.playbackRate = 1;
-      clearInterval(x);
-      elemLogoPath.forEach(
-        function(x) {
-          x.style.animation = "none";
-      });
-      elemPath.forEach(
-        function(x) {
-          // x.classList.remove("makePathCopy");
-          x.style.animation = "none";
-      });
-      elemTopPath.forEach(
-        function(x) {
-          // x.classList.remove("makePathTopCopy");
-          x.style.animation = "none";
-      });
-      elemTopRight.forEach(
-        function(x) {
-          x.style.animation = "none";
-          // x.classList.remove("makePathRightCopy");
-      });
-      elemTopBootm.forEach(
-        function(x) {
-          x.style.animation = "none";
-          // x.classList.remove("makePathBootmCopy");
-      });
-      elemTopLeft.forEach(
-        function(x) {
-          x.style.animation = "none";
-          // x.classList.remove("makePathLeftCopy");
-      });
+  //   setTimeout(()=> {
+  //     elemLogoPath.forEach(
+  //       function(x) {
+  //         x.style.animation = "none";
+  //     });
+  //     elemPath.forEach(
+  //       function(x) {
+  //         x.style.animation = "none";
+  //     });
+  //     elemTopPath.forEach(
+  //       function(x) {
+  //         x.style.animation = "none";
+  //     });
+  //     elemTopRight.forEach(
+  //       function(x) {
+  //         x.style.animation = "none";
+  //     });
+  //     elemTopBootm.forEach(
+  //       function(x) {
+  //         x.style.animation = "none";
+  //     });
+  //     elemTopLeft.forEach(
+  //       function(x) {
+  //         x.style.animation = "none";
+  //     });
 
-    }, 8300);
-  } , 3000);
+  //   }, 8300);
+  // } , 3000);
 
   
 
@@ -405,8 +459,8 @@ window.addEventListener("load", () => {
 
 document.getElementsByClassName("logo-text")[0].addEventListener("mouseenter", function() {
   let elemText = document.querySelectorAll("[id^='logo-']");
-  let audio1 = new Audio("audio/dl/11.mp3");
-  audio1.play();
+  // let audio1 = new Audio("audio/dl/11.mp3");
+  // audio1.play();
   this.style.cursor = "pointer";
 
   let x = 0;
