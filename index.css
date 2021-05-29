@@ -1151,32 +1151,32 @@ body {
   stroke-dashoffset: -200;
   stroke: white;
   stroke-dasharray:  0, 100, 0.0001, 1700;
-  animation: xyz0 1.4s linear 3s infinite forwards;
+  /* animation: xyz0 5s linear 3s infinite forwards; */
 }
 
 .makePathCopy  { 
   stroke-dashoffset: 1800;
-  animation: xyz0 1.5s linear 4s infinite forwards;
+  animation: xyz0 7s linear 0s infinite forwards;
 }
 
 .makePathTopCopy  { 
   stroke-dashoffset: 2000;
-  animation: xyz0 1.5s linear 4.0s infinite forwards;
+  animation: xyz0 9s linear 3s infinite forwards;
 }
 
 .makePathBootmCopy  { 
   stroke-dashoffset: -2000;
-  animation: xyz0 1.5s linear 4.0s infinite forwards;
+  animation: xyz0 9s linear 3s infinite forwards;
 }
 
 .makePathLeftCopy  { 
   stroke-dashoffset: 2000;
-  animation: xyz0 1.5s linear 4.0s infinite forwards;
+  animation: xyz0 8s linear 2s infinite forwards;
 }
 .makePathRightCopy  { 
-  stroke-dashoffset: 1000;
+  stroke-dashoffset: 2000;
   stroke-dasharray:  0, 1000, 20, 1000;
-  animation: xyz0 1.5s linear 3.5s infinite forwards;
+  animation: xyz0 8s linear 2s infinite forwards;
   
 }
 
