@@ -194,6 +194,8 @@ body {
 
 .icon-facebook:focus {
   background-position: -2.4px -4px;
+  -webkit-filter: drop-shadow(0px 0px 10px #41e9e099 );
+  filter: drop-shadow(0px 0px 10px #41e9e099 );
 }
 
 .icon-instagram {
@@ -206,6 +208,8 @@ body {
 
 .icon-instagram:focus {
   background-position: -58px -3.5px;
+  -webkit-filter: drop-shadow(0px 0px 10px #41e9e099 );
+  filter: drop-shadow(0px 0px 10px #41e9e099 );
 }
 
 .icon-twitter {
@@ -218,6 +222,8 @@ body {
 
 .icon-twitter:focus {
   background-position: -113.5px -4px;
+  -webkit-filter: drop-shadow(0px 0px 10px #41e9e099 );
+  filter: drop-shadow(0px 0px 10px #41e9e099 );
 }
 
 .icon-linkedin {
@@ -231,6 +237,8 @@ body {
 
 .icon-linkedin:focus {
   background-position: -170px -6px;
+  -webkit-filter: drop-shadow(0px 0px 10px #41e9e099 );
+  filter: drop-shadow(0px 0px 10px #41e9e099 );
 }
 
 .icon-telegram {
@@ -244,6 +252,8 @@ body {
 
 .icon-telegram:focus {
   background-position: -224px -7px;
+  -webkit-filter: drop-shadow(0px 0px 10px #41e9e099 );
+  filter: drop-shadow(0px 0px 10px #41e9e099 );
 }
 
 
@@ -498,7 +508,7 @@ body {
 
 
 
-.path-ani-1-1 {
+/* .path-ani-1-1 {
   animation: path-ani-1 4s linear -5s infinite forwards;
   display: inline;
 }
@@ -516,7 +526,7 @@ body {
 .path-ani-1-4 {
   animation: path-ani-1 4s linear -20s infinite forwards;
   display: inline;
-}
+} */
 
 /* .path-ani-1-5 {
   animation: path-ani-1 6s linear -1s infinite forwards;
@@ -528,7 +538,7 @@ body {
   display: inline;
 } */
 
-
+/* 
 .path-ani-2-1 {
   animation: path-ani-2 3s linear -3s infinite forwards;
   display: inline;
@@ -551,7 +561,7 @@ body {
   display: inline;
 } */
 
-.path-ani-3-1 {
+/* .path-ani-3-1 {
   animation: path-ani-3 4s linear -3s infinite forwards;
   display: inline;
 }
@@ -569,7 +579,7 @@ body {
 .path-ani-3-4 {
   animation: path-ani-3 4s linear -12s infinite forwards;
   display: inline;
-}
+} */
 
 /* .path-ani-3-5 {
   animation: path-ani-3 6s linear -1s infinite forwards;
@@ -581,7 +591,7 @@ body {
   display: inline;
 } */
 
-.path-ani-4-1 {
+/* .path-ani-4-1 {
   animation: path-ani-4 1s linear  infinite forwards;
   display: inline;
 }
@@ -593,37 +603,37 @@ body {
 .path-ani-5-2 {
   animation: path-ani-5 1.5s linear 0.5s infinite forwards;
   display: inline;
-}
+} */
 /* .path-ani-5-3 {
   animation: path-ani-5 1.5s linear -0.5s infinite forwards;
   display: inline;
 } */
 
-.path-ani-6-1 {
+/* .path-ani-6-1 {
   animation: path-ani-6 2s linear  infinite forwards;
   display: inline;
 }
 .path-ani-6-2 {
   animation: path-ani-6 2s linear -0.7s infinite forwards;
   display: inline;
-}
+} */
 /* .path-ani-6-3 {
   animation: path-ani-6 2s linear -1.4s infinite forwards;
   display: inline;
 } */
 
-
+/* 
 .path-ani-7-1 {
   animation: path-ani-7 1s linear  infinite forwards;
   display: inline;
-}
+} */
 
 /* .path-ani-7-2 {
   animation: path-ani-7 1s linear -0.5s infinite forwards;
   display: inline;
 } */
 
-.path-ani-8-1 {
+/* .path-ani-8-1 {
   animation: path-ani-8 5s linear -6s infinite forwards;
   display: inline;
 }
@@ -646,7 +656,7 @@ body {
 .path-ani-8-5 {
   animation: path-ani-8 5s linear -9s infinite forwards;
   display: inline;
-}
+}  */
 
 /* .path-ani-8-6 {
   animation: path-ani-8 5s linear -1.5s infinite forwards;
@@ -658,9 +668,9 @@ body {
   display: inline;
 } */
 
-[class^="path-ani-"] {
+/* [class^="path-ani-"] {
   display: none !important;
-}
+} */
 
 /* circle animation on logp path  */
 
@@ -1230,9 +1240,10 @@ body {
 }
 
 .logo-path-copy  { 
-  stroke-dashoffset: -200;
-  stroke: transparent;
-  stroke-dasharray:  0, 10, 0.0001, 1;
+  stroke-dashoffset: 200;
+  stroke: #fff;
+  stroke-opacity: 0.1;
+  stroke-dasharray:  0, 10, 0.0001, 10;
   animation: xyz0 20s linear 4s infinite;
 }
 
@@ -1266,7 +1277,6 @@ body {
 @keyframes xyz0 {
   to{
     stroke-opacity: 1;
-    stroke: #fff;
     stroke-dashoffset: 0;
     opacity: 1;
   }

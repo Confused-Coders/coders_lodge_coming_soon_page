@@ -287,6 +287,24 @@ window.addEventListener("load", () => {
     })
   }, 4000);
 
+  setTimeout(()=> {
+    let audio1 = new Audio("./assets/audio/1.mp3");
+    let audio11 = new Audio("./assets/audio/11.mp3");
+    audio1.play();
+    audio11.play();
+  } , 0);
+
+  setTimeout(()=> {
+    let audio5 = new Audio("./assets/audio/5.mp3");
+    //let audio3 = new Audio();
+    let audio11 = new Audio("./assets/audio/11.mp3");
+    let audio7 = new Audio("./assets/audio/7.mp3");
+    audio5.play();
+    //audio3.play();
+    audio11.play();
+    audio7.play();
+  } , 1700);
+
   // setTimeout(()=> {
   //   let audio1 = new Audio("audio/dl/1.mp3");
   //   let audio11 = new Audio("audio/dl/11.mp3");
@@ -469,8 +487,8 @@ window.addEventListener("load", () => {
 
 document.getElementsByClassName("logo-text")[0].addEventListener("mouseenter", function() {
   let elemText = document.querySelectorAll("[id^='logo-']");
-  // let audio1 = new Audio("audio/dl/11.mp3");
-  // audio1.play();
+  let audio11 = new Audio("./assets/audio/11.mp3");
+  audio11.play();
   this.style.cursor = "pointer";
 
   let x = 0;
