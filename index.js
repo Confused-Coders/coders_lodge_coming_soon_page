@@ -111,120 +111,119 @@ function randCircle(x) {
       circuit.appendChild(pathCopy);
   }
 
- 
- 
+  // if(winX > 768) {
+    for(let i = 0 ; i < 5; i++) {
+      circleTopCodX[i] =  Math.floor(Math.random() * winX);
+      circleTopCodY[i] = Math.floor(Math.random() * 200);
+      circleBottomCodX[i] =  Math.floor(Math.random() * winX);
+      circleBottomCodY[i] = winY - Math.floor(Math.random() * 200);
+    }
 
-  for(let i = 0 ; i < 5; i++) {
-    circleTopCodX[i] =  Math.floor(Math.random() * winX);
-    circleTopCodY[i] = Math.floor(Math.random() * 200);
-    circleBottomCodX[i] =  Math.floor(Math.random() * winX);
-    circleBottomCodY[i] = winY - Math.floor(Math.random() * 200);
-  }
+    for(let i = 0 ; i < 3; i++) {
+      circleLeftCodX[i] =  Math.floor(Math.random() * 200);
+      circleLeftCodY[i] = Math.floor(Math.random() * winY);
+      circleRightCodX[i] = winX - Math.floor(Math.random() * 200);
+      circleRightCodY[i] = Math.floor(Math.random() * winY);
+    }
 
-  for(let i = 0 ; i < 3; i++) {
-    circleLeftCodX[i] =  Math.floor(Math.random() * 200);
-    circleLeftCodY[i] = Math.floor(Math.random() * winY);
-    circleRightCodX[i] = winX - Math.floor(Math.random() * 200);
-    circleRightCodY[i] = Math.floor(Math.random() * winY);
-  }
+    for(let i = 0; i < 5; i++) {
+      let circleTop = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      circleTop.setAttribute("cx", circleTopCodX[i]);
+      circleTop.setAttribute("cy", circleTopCodY[i]);
+      circleTop.setAttribute("r", 3 + "px");
+      circleTop.setAttribute("fill", "#043b3b");
+      circleTop.setAttribute("class",  "makeCircle");
 
-  for(let i = 0; i < 5; i++) {
-    let circleTop = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    circleTop.setAttribute("cx", circleTopCodX[i]);
-    circleTop.setAttribute("cy", circleTopCodY[i]);
-    circleTop.setAttribute("r", 3 + "px");
-    circleTop.setAttribute("fill", "#043b3b");
-    circleTop.setAttribute("class",  "makeCircle");
+      let circleBootm = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      circleBootm.setAttribute("cx", circleBottomCodX[i]);
+      circleBootm.setAttribute("cy", circleBottomCodY[i]);
+      circleBootm.setAttribute("r", 3 + "px");
+      circleBootm.setAttribute("fill", "#043b3b");
+      circleBootm.setAttribute("class",  "makeCircle");
 
-    let circleBootm = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    circleBootm.setAttribute("cx", circleBottomCodX[i]);
-    circleBootm.setAttribute("cy", circleBottomCodY[i]);
-    circleBootm.setAttribute("r", 3 + "px");
-    circleBootm.setAttribute("fill", "#043b3b");
-    circleBootm.setAttribute("class",  "makeCircle");
+      circuit.appendChild(circleTop);
+      circuit.appendChild(circleBootm);
+    }
 
-    circuit.appendChild(circleTop);
-    circuit.appendChild(circleBootm);
-  }
+    for(let i = 0; i < 3; i++) {
+      let circleLeft = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      circleLeft.setAttribute("cx", circleLeftCodX[i]);
+      circleLeft.setAttribute("cy", circleLeftCodY[i]);
+      circleLeft.setAttribute("r", 3 + "px");
+      circleLeft.setAttribute("fill", "#043b3b");
+      circleLeft.setAttribute("class", "makeCircle");
 
-  for(let i = 0; i < 3; i++) {
-    let circleLeft = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    circleLeft.setAttribute("cx", circleLeftCodX[i]);
-    circleLeft.setAttribute("cy", circleLeftCodY[i]);
-    circleLeft.setAttribute("r", 3 + "px");
-    circleLeft.setAttribute("fill", "#043b3b");
-    circleLeft.setAttribute("class", "makeCircle");
+      circuit.appendChild(circleLeft);
 
-    circuit.appendChild(circleLeft);
+      let circleRight = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      circleRight.setAttribute("cx", circleRightCodX[i]);
+      circleRight.setAttribute("cy", circleRightCodY[i]);
+      circleRight.setAttribute("r", 3 + "px");
+      circleRight.setAttribute("fill", "#043b3b");
+      circleRight.setAttribute("class", "makeCircle");
 
-    let circleRight = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    circleRight.setAttribute("cx", circleRightCodX[i]);
-    circleRight.setAttribute("cy", circleRightCodY[i]);
-    circleRight.setAttribute("r", 3 + "px");
-    circleRight.setAttribute("fill", "#043b3b");
-    circleRight.setAttribute("class", "makeCircle");
-
-    circuit.appendChild(circleRight);
-  }
+      circuit.appendChild(circleRight);
+    }
 
 
-  for(let i = 0 ; i < 5; i++ ) {
-      let pathTop = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      let pathTopCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      pathTop.setAttribute("d" , "M" + circleTopCodX[i] + " " + -40 + "V"  + circleTopCodY[i]);
-      pathTopCopy.setAttribute("d" , "M" + circleTopCodX[i] + " " + -40 + "V"  + circleTopCodY[i]);
-      pathTop.setAttribute("stroke", "#043b3b");
-      pathTop.setAttribute("stroke-width", 1);
-      pathTop.setAttribute("fill", "none");
-      pathTop.setAttribute("class", "makePath");
-      pathTopCopy.setAttribute("class", "makePathTopCopy");
+    for(let i = 0 ; i < 5; i++ ) {
+        let pathTop = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        let pathTopCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        pathTop.setAttribute("d" , "M" + circleTopCodX[i] + " " + -40 + "V"  + circleTopCodY[i]);
+        pathTopCopy.setAttribute("d" , "M" + circleTopCodX[i] + " " + -40 + "V"  + circleTopCodY[i]);
+        pathTop.setAttribute("stroke", "#043b3b");
+        pathTop.setAttribute("stroke-width", 1);
+        pathTop.setAttribute("fill", "none");
+        pathTop.setAttribute("class", "makePath");
+        pathTopCopy.setAttribute("class", "makePathTopCopy");
 
-    
+      
 
-      let pathBootm = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      let pathBootmCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      pathBootm.setAttribute("d" , "M" + circleBottomCodX[i] + " " + circleBottomCodY[i] + "V"  +  winY + 40 );
-      pathBootmCopy.setAttribute("d" , "M" + circleBottomCodX[i] + " " + circleBottomCodY[i] + "V"  +  winY + 40 );
-      pathBootm.setAttribute("stroke", "#043b3b");
-      pathBootm.setAttribute("stroke-width", 1);
-      pathBootm.setAttribute("fill", "none");
-      pathBootm.setAttribute("class", "makePath");
-      pathBootmCopy.setAttribute("class", "makePathBootmCopy");
+        let pathBootm = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        let pathBootmCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        pathBootm.setAttribute("d" , "M" + circleBottomCodX[i] + " " + circleBottomCodY[i] + "V"  +  winY + 40 );
+        pathBootmCopy.setAttribute("d" , "M" + circleBottomCodX[i] + " " + circleBottomCodY[i] + "V"  +  winY + 40 );
+        pathBootm.setAttribute("stroke", "#043b3b");
+        pathBootm.setAttribute("stroke-width", 1);
+        pathBootm.setAttribute("fill", "none");
+        pathBootm.setAttribute("class", "makePath");
+        pathBootmCopy.setAttribute("class", "makePathBootmCopy");
 
 
-    
-      circuit.appendChild(pathTop);
-      circuit.appendChild(pathTopCopy);
-      circuit.appendChild(pathBootm);
-      circuit.appendChild(pathBootmCopy);
-  }
+      
+        circuit.appendChild(pathTop);
+        circuit.appendChild(pathTopCopy);
+        circuit.appendChild(pathBootm);
+        circuit.appendChild(pathBootmCopy);
+    }
 
-  for(let i = 0 ; i < 3; i++ ) {
-      let pathLeft = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      let pathLeftCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      pathLeft.setAttribute("d" , "M" + -40 + " " + circleLeftCodY[i] + "H"  + circleLeftCodX[i]);
-      pathLeftCopy.setAttribute("d" , "M" + -40 + " " + circleLeftCodY[i] + "H"  + circleLeftCodX[i]);
-      pathLeft.setAttribute("stroke", "#043b3b");
-      pathLeft.setAttribute("stroke-width", 1);
-      pathLeft.setAttribute("fill", "none");
-      pathLeft.setAttribute("class",  "makePath");
-      pathLeftCopy.setAttribute("class",  "makePathLeftCopy");
-    
+    for(let i = 0 ; i < 3; i++ ) {
+        let pathLeft = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        let pathLeftCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        pathLeft.setAttribute("d" , "M" + -40 + " " + circleLeftCodY[i] + "H"  + circleLeftCodX[i]);
+        pathLeftCopy.setAttribute("d" , "M" + -40 + " " + circleLeftCodY[i] + "H"  + circleLeftCodX[i]);
+        pathLeft.setAttribute("stroke", "#043b3b");
+        pathLeft.setAttribute("stroke-width", 1);
+        pathLeft.setAttribute("fill", "none");
+        pathLeft.setAttribute("class",  "makePath");
+        pathLeftCopy.setAttribute("class",  "makePathLeftCopy");
+      
 
-      let pathRight = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      let pathRightCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      pathRight.setAttribute("d" , "M" + winX  + x + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
-      pathRightCopy.setAttribute("d" , "M" + winX  + x + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
-      pathRight.setAttribute("stroke", "#043b3b");
-      pathRight.setAttribute("stroke-width", 1);
-      pathRight.setAttribute("fill", "none");
-      pathRight.setAttribute("class", "makePath");
-      pathRightCopy.setAttribute("class", "makePathRightCopy");
-    
-      circuit.appendChild(pathLeft);
-      circuit.appendChild(pathLeftCopy);
-      circuit.appendChild(pathRight);
-      circuit.appendChild(pathRightCopy);
+        let pathRight = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        let pathRightCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        pathRight.setAttribute("d" , "M" + winX  + x + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
+        pathRightCopy.setAttribute("d" , "M" + winX  + x + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
+        pathRight.setAttribute("stroke", "#043b3b");
+        pathRight.setAttribute("stroke-width", 1);
+        pathRight.setAttribute("fill", "none");
+        pathRight.setAttribute("class", "makePath");
+        pathRightCopy.setAttribute("class", "makePathRightCopy");
+      
+        circuit.appendChild(pathLeft);
+        circuit.appendChild(pathLeftCopy);
+        circuit.appendChild(pathRight);
+        circuit.appendChild(pathRightCopy);
+    // }
   }
 
 
@@ -258,7 +257,7 @@ function randCircle(x) {
 }
 
 if(winX < 768) {
-  randCircle(16);
+  randCircle(10);
 }
 else {
   randCircle(30);
