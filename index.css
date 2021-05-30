@@ -499,26 +499,26 @@ body {
 
 
 .path-ani-1-1 {
-  animation: path-ani-1 6s linear 0s infinite forwards;
+  animation: path-ani-1 4s linear -5s infinite forwards;
   display: inline;
 }
 
 .path-ani-1-2 {
-  animation: path-ani-1 6s linear 1s infinite forwards;
+  animation: path-ani-1 4s linear -10s infinite forwards;
   display: inline;
 }
 
 .path-ani-1-3 {
-  animation: path-ani-1 6s linear 2s infinite forwards;
+  animation: path-ani-1 4s linear -15s infinite forwards;
   display: inline;
 }
 
 .path-ani-1-4 {
-  animation: path-ani-1 6s linear -3s infinite forwards;
+  animation: path-ani-1 4s linear -20s infinite forwards;
   display: inline;
 }
 
-.path-ani-1-5 {
+/* .path-ani-1-5 {
   animation: path-ani-1 6s linear -1s infinite forwards;
   display: inline;
 }
@@ -526,52 +526,52 @@ body {
 .path-ani-1-6 {
   animation: path-ani-1 6s linear -2s infinite forwards;
   display: inline;
-}
+} */
 
 
 .path-ani-2-1 {
-  animation: path-ani-2 3s linear  infinite forwards;
+  animation: path-ani-2 3s linear -3s infinite forwards;
   display: inline;
 }
 .path-ani-2-2 {
-  animation: path-ani-2 3s linear -0.7s infinite forwards;
+  animation: path-ani-2 3s linear -2s infinite forwards;
   display: inline;
 }
 .path-ani-2-3 {
-  animation: path-ani-2 3s linear 1.4s infinite forwards;
+  animation: path-ani-2 3s linear -1s infinite forwards;
   display: inline;
 }
-.path-ani-2-4 {
-  animation: path-ani-2 3s linear -1.4s infinite forwards;
+/* .path-ani-2-4 {
+  animation: path-ani-2 3s linear -15s infinite forwards;
   display: inline;
-}
+} */
 
-.path-ani-2-4 {
+/* .path-ani-2-4 {
   animation: path-ani-2 3s linear 0.7s infinite forwards;
   display: inline;
-}
+} */
 
 .path-ani-3-1 {
-  animation: path-ani-3 6s linear 0s infinite forwards;
+  animation: path-ani-3 4s linear -3s infinite forwards;
   display: inline;
 }
 
 .path-ani-3-2 {
-  animation: path-ani-3 6s linear 1s infinite forwards;
+  animation: path-ani-3 4s linear -6s infinite forwards;
   display: inline;
 }
 
 .path-ani-3-3 {
-  animation: path-ani-3 6s linear 2s infinite forwards;
+  animation: path-ani-3 4s linear -9s infinite forwards;
   display: inline;
 }
 
 .path-ani-3-4 {
-  animation: path-ani-3 6s linear -3s infinite forwards;
+  animation: path-ani-3 4s linear -12s infinite forwards;
   display: inline;
 }
 
-.path-ani-3-5 {
+/* .path-ani-3-5 {
   animation: path-ani-3 6s linear -1s infinite forwards;
   display: inline;
 }
@@ -579,7 +579,7 @@ body {
 .path-ani-3-6 {
   animation: path-ani-3 6s linear -2s infinite forwards;
   display: inline;
-}
+} */
 
 .path-ani-4-1 {
   animation: path-ani-4 1s linear  infinite forwards;
@@ -594,10 +594,10 @@ body {
   animation: path-ani-5 1.5s linear 0.5s infinite forwards;
   display: inline;
 }
-.path-ani-5-3 {
+/* .path-ani-5-3 {
   animation: path-ani-5 1.5s linear -0.5s infinite forwards;
   display: inline;
-}
+} */
 
 .path-ani-6-1 {
   animation: path-ani-6 2s linear  infinite forwards;
@@ -607,10 +607,10 @@ body {
   animation: path-ani-6 2s linear -0.7s infinite forwards;
   display: inline;
 }
-.path-ani-6-3 {
+/* .path-ani-6-3 {
   animation: path-ani-6 2s linear -1.4s infinite forwards;
   display: inline;
-}
+} */
 
 
 .path-ani-7-1 {
@@ -618,45 +618,45 @@ body {
   display: inline;
 }
 
-.path-ani-7-2 {
+/* .path-ani-7-2 {
   animation: path-ani-7 1s linear -0.5s infinite forwards;
   display: inline;
-}
+} */
 
 .path-ani-8-1 {
-  animation: path-ani-8 5s linear  infinite forwards;
+  animation: path-ani-8 5s linear -6s infinite forwards;
   display: inline;
 }
 
 .path-ani-8-2 {
-  animation: path-ani-8 5s linear -2s infinite forwards;
+  animation: path-ani-8 5s linear -3s infinite forwards;
   display: inline;
 }
 
 .path-ani-8-3 {
-  animation: path-ani-8 5s linear -1s infinite forwards;
+  animation: path-ani-8 5s linear -15s infinite forwards;
   display: inline;
 }
 
 .path-ani-8-4 {
-  animation: path-ani-8 5s linear 1s infinite forwards;
+  animation: path-ani-8 5s linear -12s infinite forwards;
   display: inline;
 }
 
 .path-ani-8-5 {
-  animation: path-ani-8 5s linear 2s infinite forwards;
+  animation: path-ani-8 5s linear -9s infinite forwards;
   display: inline;
 }
 
-.path-ani-8-6 {
-  animation: path-ani-8 5s linear 1.5s infinite forwards;
+/* .path-ani-8-6 {
+  animation: path-ani-8 5s linear -1.5s infinite forwards;
   display: inline;
 }
 
 .path-ani-8-7 {
   animation: path-ani-8 5s linear 2.5s infinite forwards;
   display: inline;
-}
+} */
 
 [class^="path-ani-"] {
   display: none;

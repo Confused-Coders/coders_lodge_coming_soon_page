@@ -258,6 +258,20 @@ function randCircle(x) {
 
 if(winX < 768) {
   randCircle(10);
+  // let pathAni_1_6 = document.getElementsByClassName("path-ani-1-6")[0];
+  // let pathAni_1_5 = document.getElementsByClassName("path-ani-1-6")[0];
+  // let pathAni_3_5 = document.getElementsByClassName("path-ani-3-5")[0];
+  // let pathAni_3_6 = document.getElementsByClassName("path-ani-3-6")[0];
+  // let pathAni_8_6 = document.getElementsByClassName("path-ani-8-6")[0];
+  // let pathAni_8_7 = document.getElementsByClassName("path-ani-8-7")[0];
+
+  // pathAni_1_5.style.display = "none";
+  // pathAni_1_6.style.display = "none";
+  // pathAni_3_6.style.display = "none";
+  // pathAni_3_5.style.display = "none";
+  // pathAni_8_6.style.display = "none";
+  // pathAni_8_7.style.display = "none";
+
 }
 else {
   randCircle(30);
