@@ -1231,32 +1231,32 @@ body {
   stroke-dashoffset: -200;
   stroke: white;
   stroke-dasharray:  0, 100, 0.0001, 1700;
-  /* animation: xyz0 5s linear 3s infinite forwards; */
+  /* animation: xyz0 9s linear 3s infinite forwards; */
 }
 
 .makePathCopy  { 
   stroke-dashoffset: 1800;
-  animation: xyz0 7s linear 0s infinite forwards;
+  animation: xyz0 7s linear 2s infinite forwards;
 }
 
 .makePathTopCopy  { 
   stroke-dashoffset: 2000;
-  animation: xyz0 9s linear 3s infinite forwards;
+  animation: xyz0 9s linear 4s infinite forwards;
 }
 
 .makePathBootmCopy  { 
   stroke-dashoffset: -2000;
-  animation: xyz0 9s linear 3s infinite forwards;
+  animation: xyz0 9s linear 4s infinite forwards;
 }
 
 .makePathLeftCopy  { 
   stroke-dashoffset: 2000;
-  animation: xyz0 8s linear 2s infinite forwards;
+  animation: xyz0 8s linear 3s infinite forwards;
 }
 .makePathRightCopy  { 
   stroke-dashoffset: 2000;
   stroke-dasharray:  0, 1000, 20, 1000;
-  animation: xyz0 8s linear 2s infinite forwards;
+  animation: xyz0 8s linear 3s infinite forwards;
   
 }
 
@@ -1268,7 +1268,7 @@ body {
 }
   }
 
-
+/* 
 @keyframes xyz1 {
   to{
     stroke-dashoffset: 0;
@@ -1297,7 +1297,7 @@ body {
     stroke-dashoffset: 0;
     opacity: 1;
   }
-}
+} */
 
 
 @media only screen and (min-width: 768px) {

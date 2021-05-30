@@ -35,8 +35,6 @@ for(let i=0; i < winY; i = i + 20) {
   line.setAttribute("d", "M" + 0 + " " + i + "L" + winX + " " + i);
   line.setAttribute("class", "line" + Math.floor(Math.random() * 10));
 
-  
-
   circuit.appendChild(line);
 }
 
@@ -53,7 +51,7 @@ for(let j=0; j<= winX; j = j + 20) {
   circuit.appendChild(line);
 }
 
-function randCircle() {
+function randCircle(x) {
 
   var circleCodX = [];
   var circleCodY = []; 
@@ -68,28 +66,28 @@ function randCircle() {
   var circleRightCodY = [];
 
 
-  for(let i = 0 ; i < 30; i++) {
+  for(let i = 0 ; i < x; i++) {
     circleCodX[i] =  Math.floor(Math.random() * (winX)); 
     circleCodY[i] =  Math.floor(Math.random() * (winY)); 
   }
 
   circleCodY.sort((a, b) => a - b);
 
-  for(let i = 0, j = 1 ; i < 30; i++, j++) {
+  for(let i = 0, j = 1 ; i < x; i++, j++) {
       let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circle.setAttribute("cx", circleCodX[i]);
       circle.setAttribute("cy", circleCodY[i]);
       circle.setAttribute("r", 3 + "px");
       circle.setAttribute("fill", "#043b3b");
       circle.setAttribute("class",  "makeCircle");
-
+      
       circuit.appendChild(circle);
   }
  
 
   var MoveX = [];
 
-  for(let i = 0, j = 1 ; i < 30; i++ , j++ ) {
+  for(let i = 0, j = 1 ; i < x; i++ , j++ ) {
       let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
       let pathCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
       if(circleCodX[i] < circleCodX[j]) {
@@ -215,8 +213,8 @@ function randCircle() {
 
       let pathRight = document.createElementNS("http://www.w3.org/2000/svg", "path");
       let pathRightCopy = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      pathRight.setAttribute("d" , "M" + winX  + 30 + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
-      pathRightCopy.setAttribute("d" , "M" + winX  + 30 + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
+      pathRight.setAttribute("d" , "M" + winX  + x + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
+      pathRightCopy.setAttribute("d" , "M" + winX  + x + " " + circleRightCodY[i] + "H"  + circleRightCodX[i]);
       pathRight.setAttribute("stroke", "#043b3b");
       pathRight.setAttribute("stroke-width", 1);
       pathRight.setAttribute("fill", "none");
@@ -259,9 +257,12 @@ function randCircle() {
 
 }
 
-
-
-randCircle();
+if(winX < 768) {
+  randCircle(16);
+}
+else {
+  randCircle(30);
+}
 
 
 window.addEventListener("load", () => {
@@ -291,84 +292,80 @@ window.addEventListener("load", () => {
   //   audio7.play();
   // } , 1700);
 
-  // setInterval(()=> {
-  //   let elemLogoPath = document.querySelectorAll(".logo-path-copy");
-  //   setTimeout(()=> {
-  //     elemLogoPath.forEach(
-  //       function(x) {
-  //         if(x.style.animation == "none") {
-  //           x.style.animationName = "xyz0";
-            
-  //         }
-  //         else {
-  //           x.style.animation = "none";
-  //         }
-  //     });
-  //   })
-  // },1200);
+  setInterval(()=> {
+    let elemLogoPath = document.querySelectorAll(".logoPathCopy");
+    setTimeout(()=> {
+      elemLogoPath.forEach(
+        function(x) {
+          if(x.style.animationPlayState === "running") {
+            x.style.animationPlayState = "paused";
+          }
+          else {
+            x.style.animation = "running";
+          }
+      });
+    })
+  },5000);
   
-  // setInterval(()=> {
-  //   let elemTopPath = document.querySelectorAll(".makePathTopCopy");
-  //   setTimeout(()=> {
-  //     elemTopPath.forEach(
-  //       function(x) {
-  //         if(x.style.animation == "none") {
-  //           x.style.animationName = "xyz0";
-  //         }
-  //         else {
-  //           x.style.animation = "none";
-  //         }
-  //     });
-  //   })
-  // },1300);
+  setInterval(()=> {
+    let elemTopPath = document.querySelectorAll(".makePathTopCopy");
+    setTimeout(()=> {
+      elemTopPath.forEach(
+        function(x) {
+          if(x.style.animationPlayState === "running") {
+            x.style.animationPlayState = "paused";
+          }
+          else {
+            x.style.animation = "running";
+          }
+      });
+    })
+  },10000);
   
-  // setInterval(()=> {
-  //   let elemTopBootm = document.querySelectorAll(".makePathBootmCopy");
-  //   setTimeout(()=> {
-  //     elemTopBootm.forEach(
-  //       function(x) {
-  //         if(x.style.animation == "none") {
-  //           x.style.animationName = "xyz0";
+  setInterval(()=> {
+    let elemTopBootm = document.querySelectorAll(".makePathBootmCopy");
+    setTimeout(()=> {
+      elemTopBootm.forEach(
+        function(x) {
+          if(x.style.animationPlayState === "running") {
+            x.style.animationPlayState = "paused";
+          }
+          else {
+            x.style.animation = "running";
+          }
+      });
+    })
+  },15000);
 
-  //         }
-  //         else {
-  //           x.style.animation = "none";
-  //         }
-  //     });
-  //   })
-  // },1400);
-
-  // setInterval(()=> {
-  //   let elemTopLeft = document.querySelectorAll(".makePathLeftCopy");
-  //   setTimeout(()=> {
-  //     elemTopLeft.forEach(
-  //       function(x) {
-  //         if(x.style.animation == "none") {
-  //           x.style.animationName = "xyz0";
-            
-  //         }
-  //         else {
-  //           x.style.animation = "none";
-            
-  //         }
-  //     });
-  //   })
-  // },1500);
+  setInterval(()=> {
+    let elemTopLeft = document.querySelectorAll(".makePathLeftCopy");
+    setTimeout(()=> {
+      elemTopLeft.forEach(
+        function(x) {
+          if(x.style.animationPlayState === "running") {
+            x.style.animationPlayState = "paused";
+          }
+          else {
+            x.style.animation = "running";
+          }
+      });
+    })
+  },25000);
   
-  // setInterval(()=> {
-  //   let elemTopRight = document.querySelectorAll(".makePathRightCopy");
-  //   setTimeout(()=> {
-  //     elemTopRight.forEach(
-  //       function(x) {
-  //         if(x.style.animation == "none") {
-  //           x.style.animationName = "xyz0";
-  //         }
-  //         else {
-  //           x.style.animation = "none";
-  //         }
-  //     });
-  //   })
-  // },1600);
+  setInterval(()=> {
+    let elemTopRight = document.querySelectorAll(".makePathRightCopy");
+    setTimeout(()=> {
+      elemTopRight.forEach(
+        function(x) {
+          if(x.style.animationPlayState === "running") {
+            x.style.animationPlayState = "paused";
+          }
+          else {
+            x.style.animation = "running";
+          }
+      });
+    })
+  },20000);
 
   // setTimeout(()=> {
     
@@ -404,8 +401,8 @@ window.addEventListener("load", () => {
   //         x.style.animation = "none";
   //     });
 
-  //   }, 8300);
-  // } , 3000);
+  //   }, 8x0);
+  // } , x00);
 
   
 
