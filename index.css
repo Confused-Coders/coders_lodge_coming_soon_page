@@ -659,7 +659,7 @@ body {
 } */
 
 [class^="path-ani-"] {
-  display: none;
+  display: none !important;
 }
 
 /* circle animation on logp path  */
@@ -780,7 +780,7 @@ body {
 }
 
 
-@keyframes path-ani-1 {
+/* @keyframes path-ani-1 {
   0% {
       cx: 42.6;
       cy: 28;
@@ -922,7 +922,7 @@ body {
       cx: 69;
       cy: 30;
   }
-}
+} */
 
 body {
   

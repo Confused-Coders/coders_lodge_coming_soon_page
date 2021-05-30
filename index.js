@@ -314,7 +314,7 @@ window.addEventListener("load", () => {
             x.style.animationPlayState = "paused";
           }
           else {
-            x.style.animation = "running";
+            x.style.animationPlayState = "running";
           }
       });
     })
@@ -329,7 +329,7 @@ window.addEventListener("load", () => {
             x.style.animationPlayState = "paused";
           }
           else {
-            x.style.animation = "running";
+            x.style.animationPlayState = "running";
           }
       });
     })
@@ -344,7 +344,7 @@ window.addEventListener("load", () => {
             x.style.animationPlayState = "paused";
           }
           else {
-            x.style.animation = "running";
+            x.style.animationPlayState = "running";
           }
       });
     })
@@ -359,7 +359,7 @@ window.addEventListener("load", () => {
             x.style.animationPlayState = "paused";
           }
           else {
-            x.style.animation = "running";
+            x.style.animationPlayState = "running";
           }
       });
     })
@@ -374,7 +374,7 @@ window.addEventListener("load", () => {
             x.style.animationPlayState = "paused";
           }
           else {
-            x.style.animation = "running";
+            x.style.animationPlayState = "running";
           }
       });
     })
