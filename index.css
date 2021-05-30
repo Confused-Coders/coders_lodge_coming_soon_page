@@ -110,14 +110,28 @@ body {
 
 .header-container .content-social-link {
   text-align: center;
-  font-size: 26px;
 }
 
 .content-social-link a {
-  margin: 5px;
-  cursor: pointer;
+  display: inline-block;
   color: #fff;
-  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0px 20px;
+  cursor: pointer;
+  margin: 5px 3px; 
+  border-radius: 6px;
+  height: 50px;
+  width: 50px;
+  background-image: url("assets/image/social.svg");
+  background-size: 550% 550%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.content-social-link a:hover {
+  -webkit-filter: drop-shadow(0px 0px 10px #41e9e099 );
+  filter: drop-shadow(0px 0px 10px #41e9e099 );
 }
 
 .content-social-link a:hover .facebook {
@@ -139,6 +153,72 @@ body {
 .content-social-link a:hover .telegram {
   color: #229ED9;
 }
+
+
+
+
+.icon-facebook {
+  background-position: -2.4px -132px;
+}
+
+.icon-facebook:hover {
+  background-position: -2.4px -68px;
+}
+
+.icon-facebook:focus {
+  background-position: -2.4px -4px;
+}
+
+.icon-instagram {
+  background-position: -58px -133.5px;
+}
+
+.icon-instagram:hover {
+  background-position: -58px -67.5px;
+}
+
+.icon-instagram:focus {
+  background-position: -58px -3.5px;
+}
+
+.icon-twitter {
+  background-position: -113.5px -131px;
+}
+
+.icon-twitter:hover {
+  background-position: -113.5px -68px;
+}
+
+.icon-twitter:focus {
+  background-position: -113.5px -4px;
+}
+
+.icon-linkedin {
+  background-position: -170px -130px;
+  
+}
+
+.icon-linkedin:hover {
+  background-position: -170px -67px;
+}
+
+.icon-linkedin:focus {
+  background-position: -170px -6px;
+}
+
+.icon-telegram {
+  background-position: -225px -130px;
+  
+}
+
+.icon-telegram:hover {
+  background-position: -224px -68px;
+}
+
+.icon-telegram:focus {
+  background-position: -224px -7px;
+}
+
 
 /* .header-content .header-content-img {
   width: 100%;
