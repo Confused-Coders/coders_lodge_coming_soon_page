@@ -1231,9 +1231,9 @@ body {
 
 .logo-path-copy  { 
   stroke-dashoffset: -200;
-  stroke: white;
-  stroke-dasharray:  0, 100, 0.0001, 1700;
-  /* animation: xyz0 9s linear 3s infinite forwards; */
+  stroke: transparent;
+  stroke-dasharray:  0, 10, 0.0001, 1;
+  animation: xyz0 20s linear 4s infinite;
 }
 
 .makePathCopy  { 
@@ -1265,10 +1265,12 @@ body {
 
 @keyframes xyz0 {
   to{
+    stroke-opacity: 1;
+    stroke: #fff;
     stroke-dashoffset: 0;
     opacity: 1;
-}
   }
+}
 
 /* 
 @keyframes xyz1 {
