@@ -1,8 +1,14 @@
 "use strict";
-var winX = window.innerWidth;
+var winX = window.innerWidth; 
 var winY = window.innerHeight;
 
+// setTimeout(() => {
+//   console.log("setTimeout 4sec");
+// }, 4000);
 
+// console.log("direct console");
+
+ 
 
 var count = 0;
 
@@ -278,32 +284,57 @@ else {
 }
 
 
+
+
 window.addEventListener("load", () => {
   const pathAni = document.querySelectorAll("[class^='path-ani']");
+  let audio1 = new Audio("./assets/audio/1.mp3");
+  let audio11 = new Audio("./assets/audio/11.mp3");
+  let audio5 = new Audio("./assets/audio/5.mp3");
+  let audio7 = new Audio("./assets/audio/7.mp3");
+  const btnAutoplay = document.getElementsByClassName('autoplay-btn')[0];
+  
+  btnAutoplay.addEventListener('click', function() {
+    const bgAutoplay = document.getElementsByClassName("background-autoplay")[0];
+    const cntAutoplay = document.getElementsByClassName("content-autoplay")[0];
+    const bgCircuit  = document.getElementsByClassName("background-circuit")[0];
+    const main = document.getElementsByClassName("main")[0];
 
-  setTimeout(() => {
-    pathAni.forEach((e) => {
-      e.style.display = 'inline';
-    })
-  }, 4000);
+    bgAutoplay.style.opacity = "0.5";
+    bgAutoplay.style.zIndex = "0";
 
-  setTimeout(()=> {
-    let audio1 = new Audio("./assets/audio/1.mp3");
-    let audio11 = new Audio("./assets/audio/11.mp3");
-    audio1.play();
-    audio11.play();
-  } , 0);
+    cntAutoplay.style.display = "none";
 
-  setTimeout(()=> {
-    let audio5 = new Audio("./assets/audio/5.mp3");
-    //let audio3 = new Audio();
-    let audio11 = new Audio("./assets/audio/11.mp3");
-    let audio7 = new Audio("./assets/audio/7.mp3");
-    audio5.play();
-    //audio3.play();
-    audio11.play();
-    audio7.play();
-  } , 1700);
+    bgCircuit.style.display = "block";
+    main.style.display = "flex";
+
+    setTimeout(() => {
+      pathAni.forEach((e) => {
+        e.style.display = 'inline';
+      })
+    }, 4000);
+  
+    setTimeout(()=> {
+      
+      audio1.play();
+      audio11.play();
+    } , 0);
+  
+    setTimeout(()=> {
+      
+      audio5.play();
+      //audio3.play();
+      audio11.play();
+      audio7.play();
+    } , 1700);
+
+  });
+
+  
+
+  
+
+  
 
   // setTimeout(()=> {
   //   let audio1 = new Audio("audio/dl/1.mp3");
