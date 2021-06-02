@@ -300,14 +300,16 @@ window.addEventListener("load", () => {
     const bgCircuit  = document.getElementsByClassName("background-circuit")[0];
     const main = document.getElementsByClassName("main")[0];
 
+    setTimeout(() => {
+      cntAutoplay.style.display = "none";
+      bgCircuit.style.display = "block";
+      main.style.display = "flex";
+    }, 300);
+
     bgAutoplay.style.opacity = "0.5";
+    cntAutoplay.style.opacity = "0";
     bgAutoplay.style.zIndex = "0";
-
-    cntAutoplay.style.display = "none";
-
-    bgCircuit.style.display = "block";
-    main.style.display = "flex";
-
+    
     setTimeout(() => {
       pathAni.forEach((e) => {
         e.style.display = 'inline';

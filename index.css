@@ -19,6 +19,7 @@
 body {
   margin: 0;
   padding: 0;  
+  font-family: monospace;
   background-color: #212121;
 }
 
@@ -61,6 +62,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
 .content-autoplay h3 {
@@ -70,7 +72,7 @@ body {
   text-transform: uppercase;
   filter: drop-shadow(0 0 6px red);
   font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
 }
 
 .content-autoplay button {
@@ -88,6 +90,7 @@ body {
 	border-radius: 12px;
 	box-shadow: 0 6px #ccc;
 	transition: 0.4s ease;
+  
 }
 
 .content-autoplay button::after{
@@ -126,7 +129,7 @@ body {
   justify-content: center;
   align-items: center;
   display: none;
-  transition: 3s;
+  transition: 2s ease-in;
 }
 
 .main .main-container {
@@ -195,7 +198,7 @@ body {
   color: #fff;
   font-size: 36px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   font-weight: 900;
 }
 
@@ -1136,6 +1139,14 @@ body {
   fill: none;
 }
 
+#Zero-1-O, #Zero-1-D, #Zero-1-E, #Zero-1-R, #Zero-1-S, #Zero-2-O, #Zero-2-D, #Zero-2-G, #Zero-2-E, #logo-1-O, #logo-1-D, #logo-1-E, #logo-1-R, #logo-1-S, #logo-2-O, #logo-2-D, #logo-2-G, #logo-2-E {
+  font-size: 7.5px !important;
+}
+
+#Zero-1-C, #Zero-2-L, #logo-1-C, #logo-2-L {
+  font-size: 9px !important;
+}
+
 #Zero-1-C {
   --xyz: #043b3b;
   animation: tZero 1s linear 1s forwards;
@@ -1311,8 +1322,9 @@ body {
 
 .logo-path-copy  { 
   stroke-dashoffset: 200;
+  opacity: 0.5;
   stroke: #fff;
-  stroke-opacity: 0.1;
+  stroke-opacity: 0;
   stroke-dasharray:  0, 10, 0.0001, 10;
   animation: xyz0 20s linear 4s infinite;
 }
@@ -1345,10 +1357,12 @@ body {
 
 
 @keyframes xyz0 {
+  from {
+    stroke-opacity: 1;
+  }
   to{
     stroke-opacity: 1;
     stroke-dashoffset: 0;
-    opacity: 1;
   }
 }
 
@@ -1405,6 +1419,13 @@ body {
     font-size: 45px;
   }
 
+  #Zero-1-O, #Zero-1-D, #Zero-1-E, #Zero-1-R, #Zero-1-S, #Zero-2-O, #Zero-2-D, #Zero-2-G, #Zero-2-E, #logo-1-O, #logo-1-D, #logo-1-E, #logo-1-R, #logo-1-S, #logo-2-O, #logo-2-D, #logo-2-G, #logo-2-E {
+    font-size: 6.5px !important;
+  }
+  
+  #Zero-1-C, #Zero-2-L, #logo-1-C, #logo-2-L {
+    font-size: 8px !important;
+  }
 
 
   /* .svg {
