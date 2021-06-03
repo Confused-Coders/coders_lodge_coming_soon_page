@@ -314,13 +314,13 @@ window.addEventListener("load", () => {
       pathAni.forEach((e) => {
         e.style.display = 'inline';
       })
-    }, 4000);
+    }, 4500); // 4000
   
     setTimeout(()=> {
       
       audio1.play();
       audio11.play();
-    } , 0);
+    } , 500); // 0
   
     setTimeout(()=> {
       
@@ -328,7 +328,7 @@ window.addEventListener("load", () => {
       //audio3.play();
       audio11.play();
       audio7.play();
-    } , 1700);
+    } , 2000); //1700
 
   });
 
