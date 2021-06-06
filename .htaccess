@@ -1,3 +1,7 @@
 RewriteEngine On
-RewriteCond %{HTTPS} !on
-RewriteRule (.*) https://%{HTTPS_HOST}%{REQUEST_URI}
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.coderslodge.in/$1 [L,R=301]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.coderslodge.in/$1 [L,R=301] 
