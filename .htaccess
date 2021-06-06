@@ -3,5 +3,7 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI}  [L,R=301]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.coderslodge.in/$1 [R,L]
 </IfModule>
 # END 301 redirect from example.com to www.example.com
