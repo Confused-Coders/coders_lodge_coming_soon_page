@@ -3,5 +3,5 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ http://www.coderslodge.in/$1 [L,R=301]
 
-RewriteCond %{HTTPS} off
+RewriteCond %{SERVER_PORT} !^443$
 RewriteRule ^(.*)$ https://www.coderslodge.in/$1 [L,R=301] 
