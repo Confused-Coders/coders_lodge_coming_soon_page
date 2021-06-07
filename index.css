@@ -91,6 +91,7 @@ body {
 	transition: 0.4s ease;
   font-weight: 600;
   text-transform: uppercase;
+  
 }
 
 .content-autoplay button::after{
@@ -104,6 +105,7 @@ body {
 	margin-top: -150%;
 	transition: all 0.8s;
 	opacity: 0;
+  pointer-events: none;
 }
 
 .content-autoplay button:active:after {
@@ -154,6 +156,7 @@ body {
 .content-logo-tagline .logo-svg {
   width: 200px;
   height: 200px;
+  pointer-events: none;
 }
 
 .logo-svg .svg {
@@ -1470,5 +1473,9 @@ body {
 @media only screen and (min-width: 1024px) {
   .content-logo-tagline .logo-tagline h3  {
     font-size: 60px;
+  }
+
+  .content-logo-tagline .logo-svg {
+    pointer-events: all;
   }
 }
