@@ -1,0 +1,75 @@
+@mixin stroke($color, $width, $opacity: 1, $dasharray: 0, $dashoffset: 0, $linecap: butt, $linejoin: miter) {
+    stroke: $color;
+    stroke: {
+        width: $width;
+        opacity: $opacity;
+        dasharray: $dasharray;
+        dashoffset: $dashoffset;
+        linejoin: $linejoin;
+        linecap: $linecap;
+    }
+}
+
+@mixin zero-space {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin zero-position($position) {
+    position: $position;
+    top: 0;
+    left: 0;
+}
+
+@mixin  position($position, $top, $left)  {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin bg-gradient {
+    background-image: linear-gradient(to left , $bgcolor1 , $bgcolor2  , $bgcolor3 ,  $bgcolor4);
+}
+
+@mixin full-size($width: 100%, $height: 100vh) {
+    width: $width;
+    height: $height;
+}
+
+@mixin center-grid($justify: center, $align: center) {
+    display: grid;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center-flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center-absolute($top: 50%, $left: 50%, $x: -50%, $y: -50%) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate($x, $y);
+} 
+
+@mixin logo-drop-shadow($left: 0px, $right: 0px, $blur: 10px) {
+    -webkit-filter: drop-shadow($left $right $blur #41e9e099 );
+    filter: drop-shadow($left $right $blur #41e9e099 );
+}
+
+@mixin list-reset {
+    @include zero-space;
+    list-style-type: none;
+}
+
+@mixin anchor {
+    @include center-flex;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+

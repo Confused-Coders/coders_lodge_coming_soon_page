@@ -1,0 +1,121 @@
+.nav-item-btn {
+    @include full-size(100%, calc(100vh - 50px));
+    @include center-flex(space-between, flex-start);
+    flex-direction: column;
+    @include zero-space;
+    display: none;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    padding: 10px 0;
+    opacity: 1;
+    z-index: 10;
+
+
+    ul {
+        @include list-reset;
+        @include center-flex(flex-start, flex-start);
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+
+        a, .nav-item-list {
+            @include anchor;
+            width: auto;
+            height: $nav-height-mob;
+            line-height: $nav-height-mob;
+            color: $colorWhite;
+            font-size: 20px; 
+            transition: 0.5s;
+        }
+
+        .social-icon:hover , .nav-item-list:hover {
+            color: $colorWeb3;
+            @include logo-drop-shadow();
+            font-size: 21px;
+        }
+    }
+
+    .nav-item-social {
+        @include center-grid;
+        grid-template-columns: auto auto auto auto auto;
+        height: $nav-height-mob;
+
+        .social-icon {
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 6px;
+            background-image: url("../image/social.svg");
+            background-size: 550% 550%;
+            background-repeat: no-repeat;
+        }
+
+        .icon-Facebook {
+            background-position: -2.4px -132px;
+        }
+
+        .icon-Facebook:hover {
+            background-position: -2.4px -68px;
+        }
+
+        .icon-Facebook:focus {
+            background-position: -2.4px -4px;
+        }
+
+        .icon-Instagram {
+            background-position: -58px -133.5px;
+        }
+
+        .icon-Instagram:hover {
+            background-position: -58px -67.5px;
+        }
+
+        .icon-Instagram:focus {
+            background-position: -58px -3.5px;
+        }
+
+        .icon-Twitter {
+            background-position: -113.5px -131px;
+        }
+
+        .icon-Twitter:hover {
+            background-position: -113.5px -68px;
+        }
+
+        .icon-Twitter:focus {
+            background-position: -113.5px -4px;
+        }
+
+        .icon-Linkedin {
+            background-position: -170px -130px;
+            
+        }
+
+        .icon-Linkedin:hover {
+            background-position: -170px -67px;
+        }
+
+        .icon-Linkedin:focus {
+            background-position: -170px -6px;
+        }
+
+        .icon-Telegram {
+            background-position: -225px -130px;
+            
+        }
+
+        .icon-Telegram:hover {
+            background-position: -224px -68px;
+        }
+
+        .icon-Telegram:focus {
+            background-position: -224px -7px;
+        }
+    }
+    .copy-right {
+        color: $colorWhite;
+        text-align: center;
+        margin: 8px;
+    }
+}
