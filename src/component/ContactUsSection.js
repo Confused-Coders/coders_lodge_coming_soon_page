@@ -18,15 +18,15 @@ class ContactUs extends Component {
                         <div className="contact-us-detail-container">
                             <ul className="contact-us-detail-list">
                                 <li><i className="fas fa-phone-volume"></i> <span>+91 7707046822</span></li>
-                                <li><i className="fas fa-envelope"></i> <span>coderslodgeofficial@gmail.comm</span></li>
+                                <li><i className="fas fa-envelope"></i> <span>coderslodgeofficial@gmail.com</span></li>
                                 <li><i className="fas fa-map-marker-alt"></i> <span>Chandigarh,Punjab,India</span></li>
                             </ul>
-                            <ul className="contact-us-social">
+                            {/* <ul className="contact-us-social">
                                 <li><i className="fab fa-facebook-f"></i></li>
                                 <li><i className="fab fa-instagram"></i></li>
                                 <li><i className="fab fa-telegram"></i></li>
                                 <li><i className="fab fa-twitter"></i></li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                     

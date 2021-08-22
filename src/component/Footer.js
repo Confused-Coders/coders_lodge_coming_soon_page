@@ -315,7 +315,7 @@ class Footer extends Component {
                                 <a onClick={() => this.props.footerMenuTerms()} href="javascript:void(null)" >Terms and Conditions</a>
                             </div>
                             <div className="footer-terms-list">
-                                <a onClick={() => this.props.footerMenuPrivacy()} href="javascript:void(null)">Privacy</a>
+                                <a onClick={() => this.props.footerMenuPrivacy()} href="javascript:void(null)">Privacy Policy</a>
                             </div>
                             {/* <div className="footer-terms-list">
                             <a href="#">About Us</a>
