@@ -293,7 +293,7 @@ class Footer extends Component {
                                 <h4><strong>Support</strong></h4>
                             </div>
                             <div className="footer-support-list">
-                                <a href="#">Report Bugs</a>
+                                <a href="https://forms.gle/AHKUMs3hcZYCasDe6" target="_blank">Report Bugs</a>
                             </div>
                             <div className="footer-support-list">
                                 <a href="#">Hall of Fame</a>
@@ -309,7 +309,7 @@ class Footer extends Component {
                         </div>
                         <div className="footer-terms">
                             <div className="footer-terms-list">
-                                <a href="#">&copy; 2021 Coders Lodge.</a>
+                                <a href="/home">&copy; 2021 Coders Lodge.</a>
                             </div>
                             <div className="footer-terms-list">
                                 <a onClick={() => this.props.footerMenuTerms()} href="javascript:void(null)" >Terms and Conditions</a>
